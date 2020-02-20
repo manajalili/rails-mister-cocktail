@@ -1,16 +1,20 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
 <div>
 <h1><strong>Cocktail's name</strong></h1>
 <p><%= @cocktail.name %></p>
 </div>
 
 <div>
-  <h1><strong>Doses</strong></h1>
+  <h4><strong>Doses</strong></h4>
   <% @doses.each do |dose| %>
-  <li><%= dose.description %> (<%= dose.ingredient.name %>)</li>
+  <li><%=dose.description %>: <strong><%= dose.ingredient.name %></strong></li>
   <%= link_to "Delete", dose_path(dose), method: :delete %>
   <% end %>
 </div>
 <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
-<%= link_to "Write the doses", new_cocktail_dose_path(@cocktail), class: "btn btn-danger" %>
 <%= link_to "Back", cocktails_path, class: "btn btn-primary" %>
+  </div>
+</div>
+
 

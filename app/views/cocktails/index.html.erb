@@ -1,5 +1,24 @@
-<h1>Welcome to Mister Cocktail</h1>
-<% @cocktails.each do |cocktail| %>
-<li> <%=link_to cocktail.name, cocktail_path(cocktail) %></li>
-<% end %>
-<%= link_to "Create", new_cocktail_path, class: "btn btn-success" %>
+<!-- <style>
+  .cocktails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  .cocktail {
+    height: 200px;
+    background-color: coral;
+    border-radius: 5px;
+    padding: 8px;
+  }
+</style> -->
+  <h1>Welcome to Mister Cocktail</h1>
+  <div class="cocktails">
+    <% @cocktails.each do |cocktail| %>
+  <div class="cocktail">
+    <%=link_to cocktail.name, cocktail_path(cocktail) %>
+  </div>
+  <% end %>
+  <%= link_to "Create", new_cocktail_path, class: "btn btn-success" %>
+
+</div>
