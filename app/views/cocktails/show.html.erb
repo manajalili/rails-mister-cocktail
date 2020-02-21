@@ -1,4 +1,4 @@
-<div class="row">
+.<div class="row">
   <div class="col-md-10 mx-auto">
 <div>
 <h1><strong>Cocktail's name</strong></h1>
@@ -9,11 +9,13 @@
   <h4><strong>Doses</strong></h4>
   <% @doses.each do |dose| %>
   <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> <%= link_to "Delete", dose_path(dose), method: :delete %></li>
-
   <% end %>
 </div>
+  <%= image_tag 'egg.jpg', height: 300, width: 400, crop: :fill %>
+<div class="button">
 <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
-<%= link_to "Back", cocktails_path, class: "btn btn-primary" %>
+<%= link_to "Back", root_path, class: "btn btn-primary" %>
+  </div>
   </div>
 </div>
 

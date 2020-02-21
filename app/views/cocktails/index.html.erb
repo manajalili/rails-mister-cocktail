@@ -12,10 +12,26 @@
     padding: 8px;
   }
 </style> -->
+<!-- <div class="banner">
   <h1>Welcome to Mister Cocktail</h1>
-  <div class="button">
- <%= link_to "Create", new_cocktail_path, class: "btn btn-success" %>
+  <%= cl_image_tag("https://res.cloudinary.com/delbyfqkv/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1582292677/luke-insoll-0NSPC1dThU4-unsplash_qa5gxk.jpg") %>
+</div> -->
+
+<div class="container">
+  <div class= "mx-auto">
+
+  <%= cl_image_tag("https://res.cloudinary.com/delbyfqkv/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1582292677/luke-insoll-0NSPC1dThU4-unsplash_qa5gxk.jpg")%>
+
+    <h1>Mister Cocktail<strong></h1>
+   <div class="button">
+    <%= link_to "Create", new_cocktail_path, class: "btn btn-success" %>
+  </div>
+  </div>
 </div>
+
+
+
+<div class="container">
 
   <div class="cocktails">
     <% @cocktails.each do |cocktail| %>
@@ -23,4 +39,5 @@
     <%=link_to cocktail.name, cocktail_path(cocktail) %>
   </div>
   <% end %>
+</div>
 </div>
