@@ -8,7 +8,7 @@
 <div>
   <h4><strong>Doses</strong></h4>
   <% @doses.each do |dose| %>
-  <li><%=dose.description %>: <strong><%= dose.ingredient.name %></strong></li>
+  <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> </li>
   <%= link_to "Delete", dose_path(dose), method: :delete %>
   <% end %>
 </div>
