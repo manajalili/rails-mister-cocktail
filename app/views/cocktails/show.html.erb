@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-4 mx-auto">
+  <div class="col-md-10 mx-auto">
 <div>
 <h1><strong>Cocktail's name</strong></h1>
 <p><%= @cocktail.name %></p>
@@ -8,8 +8,8 @@
 <div>
   <h4><strong>Doses</strong></h4>
   <% @doses.each do |dose| %>
-  <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> </li>
-  <%= link_to "Delete", dose_path(dose), method: :delete %>
+  <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> <%= link_to "Delete", dose_path(dose), method: :delete %></li>
+
   <% end %>
 </div>
 <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>

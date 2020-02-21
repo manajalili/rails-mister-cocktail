@@ -13,6 +13,10 @@
   }
 </style> -->
   <h1>Welcome to Mister Cocktail</h1>
+  <div class="button">
+ <%= link_to "Create", new_cocktail_path, class: "btn btn-success" %>
+</div>
+
   <div class="cocktails">
     <% @cocktails.each do |cocktail| %>
   <div class="cocktail">
@@ -20,4 +24,3 @@
   </div>
   <% end %>
 </div>
- <%= link_to "Create", new_cocktail_path, class: "btn btn-success btn-color btn-bg-color btn-sm col-xs-2 btn-success-spacing" %>
