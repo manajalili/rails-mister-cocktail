@@ -1,0 +1,23 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #ffb427;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Inconsolata', monospace;
+}
+
+.banner p {
+  font-size: 20px;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
