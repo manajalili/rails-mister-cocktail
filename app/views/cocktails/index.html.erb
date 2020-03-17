@@ -1,39 +1,10 @@
-<!-- <style>
-  .cocktails {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-  }
-
-  .cocktail {
-    height: 200px;
-    background-color: coral;
-    border-radius: 5px;
-    padding: 8px;
-  }
-</style> -->
-<!-- <div class="banner">
-  <h1>Welcome to Mister Cocktail</h1>
-  <%= cl_image_tag("https://res.cloudinary.com/delbyfqkv/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1582292677/luke-insoll-0NSPC1dThU4-unsplash_qa5gxk.jpg") %>
-</div> -->
-<div class= "row mx-auto my-4">
-  <div class= "col-lg-9 img-fluid">
-
-  <%= cl_image_tag("https://res.cloudinary.com/delbyfqkv/image/upload/v1582323394/patrick-untersee-yyYjoNl7RPQ-unsplash_gjddjq.jpg", width: 700, height: 400, crop: :scale ) %>
-  </div>
-
-    <div class="col-lg-3">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/delbyfqkv/image/upload/v1582323394/patrick-untersee-yyYjoNl7RPQ-unsplash_gjddjq.jpg)">
+  <div class="container">
     <h1>Cocktails & Dreams<strong></h1>
-<!--    <div class="buttonm">
-    <%= link_to "Create", new_cocktail_path, class: "btn btn-warning" %>
-  </div> -->
+  </div>
 </div>
-</div>
-
-
 
 <div class="container">
-
   <div class="cocktails">
     <% @cocktails.each do |cocktail| %>
   <div class="cocktail">
