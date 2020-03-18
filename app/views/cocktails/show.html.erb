@@ -11,7 +11,9 @@
   <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> <%= link_to "Delete", dose_path(dose), method: :delete %></li>
   <% end %>
 </div>
-  <%= image_tag 'egg.jpg', height: 300, width: 400, crop: :fill %>
+<% if @cocktail.photo.attached? %>
+<%= cl_image_tag @cocktail.photo.key, height: 214, crop: :fill %>
+<% end %>
 <div class="button">
 <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
 <%= link_to "Back", root_path, class: "btn btn-primary" %>
