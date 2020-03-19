@@ -8,7 +8,7 @@
 <div>
   <h4><strong>Doses</strong></h4>
   <% @doses.each do |dose| %>
-  <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> <%= link_to "Delete", dose_path(dose), method: :delete %></li>
+  <li><strong><%= dose.ingredient.name %></strong> : <%=dose.description %> <%= link_to "Delete", dose_path(dose), method: :delete, class: "btn-noborder" %></li>
   <% end %>
 </div>
 <% if @cocktail.photo.attached? %>
