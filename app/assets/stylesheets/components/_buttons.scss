@@ -6,37 +6,27 @@
     border: 2px solid #999999;
     padding: 0.65em 1.7em;
     display: inline-block;
-    overflow: hidden;
     border-radius: 2px;
     transition: all 0.6s ease 0s;
     position: relative;
-    top: 15px;
 }
 
-.btn-noborder {
-  text-decoration: none;
-    font-size: 14px;
-    font-weight:600;
-    color: #f8bd7f ;
-    position: relative;
-    margin-left: 5px;
-}
-
-.btn-noborder:hover {
+.btn-ghost:hover {
+  text-decoration:none;
   color: #999999;
-  text-decoration: none;
 }
 
 .btn-btn {
   text-decoration: none;
+  font-size: 14px;
   color: white;
+  display: inline-block;
   border-radius: 2px;
   transition: all 0.6s ease 0s;
   cursor: pointer;
   background-color: #f7ae65;
   padding: 8px 7px;
   position: relative;
-  top: 2px;
 
 }
 
@@ -46,15 +36,35 @@
 }
 
 .btn-back {
-     text-decoration: none;
+    text-decoration: none;
     font-size: 12px;
     font-weight:500;
     color: #f7ae65 ;
     border: 2px solid #f7ae65;
-    padding: 0.45em 1.5em;
+    padding: 0.65em 1.5em;
     display: inline-block;
-    overflow: hidden;
     border-radius: 2px;
     transition: all 0.6s ease 0s;
     position: relative;
+  }
+
+  .btn-back:hover {
+    text-decoration: none;
+    color: #999999;
+    font-weight:bolder;
+  }
+
+  .btn-noborder {
+  text-decoration: none;
+    font-size: 14px;
+    font-weight:600;
+    color: #f8bd7f ;
+    position: relative;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+  .btn-noborder:hover {
+    color: #999999;
+    text-decoration: none;
   }
