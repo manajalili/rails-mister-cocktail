@@ -9,7 +9,6 @@
     overflow: hidden;
     border-radius: 2px;
     transition: all 0.6s ease 0s;
-    cursor: pointer;
     position: relative;
     top: 15px;
 }
@@ -21,4 +20,22 @@
     color: #f8bd7f ;
     position: relative;
     margin-left: 5px;
+}
+
+.btn-btn {
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  transition: all 0.6s ease 0s;
+  cursor: pointer;
+  background-color: #f7ae65;
+  padding: 8px 7px;
+  position: relative;
+  top: 2px;
+
+}
+
+.btn-btn:hover{
+  text-decoration: none;
+  color: #999999;
 }
