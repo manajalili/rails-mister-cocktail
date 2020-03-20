@@ -5,11 +5,11 @@
     <%= simple_form_for(@cocktail) do |f| %>
         <%= f.input :name %>
         <%= f.input :photo, as: :file %>
-        <%= f.button :submit, class: "btn btn-success" %>
+        <%= f.button :submit, class: "btn-btn" %>
     <% end %>
 
     <div class="button">
-    <%= link_to 'Back', cocktail_path, class: "btn btn-primary" %>
+    <%= link_to 'Back', cocktail_path, class: "btn-back" %>
   </div>
   </div>
 </div>

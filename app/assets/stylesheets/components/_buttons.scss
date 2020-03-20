@@ -9,7 +9,6 @@
     overflow: hidden;
     border-radius: 2px;
     transition: all 0.6s ease 0s;
-    cursor: pointer;
     position: relative;
     top: 15px;
 }
@@ -22,3 +21,40 @@
     position: relative;
     margin-left: 5px;
 }
+
+.btn-noborder:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.btn-btn {
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  transition: all 0.6s ease 0s;
+  cursor: pointer;
+  background-color: #f7ae65;
+  padding: 8px 7px;
+  position: relative;
+  top: 2px;
+
+}
+
+.btn-btn:hover{
+  text-decoration: none;
+  color: #f7ae65;
+}
+
+.btn-back {
+     text-decoration: none;
+    font-size: 12px;
+    font-weight:500;
+    color: #f7ae65 ;
+    border: 2px solid #f7ae65;
+    padding: 0.45em 1.5em;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: all 0.6s ease 0s;
+    position: relative;
+  }

@@ -15,10 +15,10 @@
 <%= cl_image_tag @cocktail.photo.key, height: 214, crop: :fill %>
 <% end %>
 <div class="button">
-<%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
-<%= link_to "Edit", edit_cocktail_path, class: "btn btn-warning" %>
+<%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn-btn" %>
+<%= link_to "Edit", edit_cocktail_path, class: "btn-btn" %>
 <%= link_to "Remove", cocktail_path(@cocktail), method: :delete, data: {confirm: "Are you sure?"}, class: "btn-ghost"  %>
-<%= link_to "Back", root_path, class: "btn btn-primary" %>
+<%= link_to "Back", root_path, class: "btn-back" %>
   </div>
   </div>
 </div>
