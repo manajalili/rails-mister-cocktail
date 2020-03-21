@@ -7,12 +7,14 @@
 <div class="container">
   <div class="cocktails">
     <% @cocktails.each do |cocktail| %>
-  <div class="cocktail">
-    <%=link_to cocktail.name, cocktail_path(cocktail) %>
-    <% if cocktail.photo.attached? %>
-     <%= cl_image_tag cocktail.photo.key, height: 150, width: 150, crop: :fill %>
+<!--       <div class="cocktail d-flex"> -->
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+          <%=link_to cocktail.name, cocktail_path(cocktail), class: "names" %>
+          <% if cocktail.photo.attached? %>
+           <%= cl_image_tag cocktail.photo.key, height: 100, crop: :fill %>
+          <% end %>
+        </div>
+ <!--      </div> -->
     <% end %>
   </div>
-  <% end %>
-</div>
 </div>
