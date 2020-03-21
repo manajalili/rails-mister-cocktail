@@ -1,13 +1,16 @@
-<div class="row">
-  <div class="col-md-4 mx-auto">
-<h1><strong>Write the doses</strong></h1>
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.association :ingredient, input_html: {class: "beautiful-dropdown"} %>
-  <%= f.input :description %>
-  <div class="button">
-  <%= f.button :submit,  class: "btn btn-success" %>
-<% end %>
-<%= link_to "Back", cocktail_path(@cocktail), class: "btn btn-primary" %>
-  </div>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+  <h1><strong>Write the doses</strong></h1>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.association :ingredient, input_html: {class: "beautiful-dropdown"} %>
+    <%= f.input :description %>
+    <br>
+    <div class="button">
+    <%= f.button :submit,  class: "btn btn-success" %>
+  <% end %>
+  <%= link_to "Back", cocktail_path(@cocktail), class: "btn btn-primary" %>
+    </div>
+    </div>
   </div>
 </div>
