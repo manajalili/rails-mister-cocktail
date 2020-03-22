@@ -12,19 +12,30 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   background-color: #F4E9D2;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
 .card-category > img {
   height:180px;
   width:100%;
   object-fit: cover;
+  opacity: 0.9;
+}
+
+.card-category .text{
+position: absolute;
+text-shadow: 1px 2px #919098;
+
+
 }
 
 .names {
-  color: #ffb427;
+  color: #ff7070;
+
 }
 
 .names:hover {
   text-decoration:none;
-  color: #ffb427;
+  color: white;
+
 }
