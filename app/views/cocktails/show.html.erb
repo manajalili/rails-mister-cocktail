@@ -1,8 +1,7 @@
 .<div class="row">
   <div class="col-md-10 mx-auto">
 <div>
-<h1><strong>Cocktail's name</strong></h1>
-<p><%= @cocktail.name %></p>
+<h1><strong><%= @cocktail.name %></strong></h1>
 <% if @cocktail.photo.attached? %>
 <%= cl_image_tag @cocktail.photo.key, height: 214, crop: :fill %>
 <% end %>

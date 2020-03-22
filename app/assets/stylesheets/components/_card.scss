@@ -19,22 +19,23 @@
   height:180px;
   width:100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .card-category .text{
 position: absolute;
-text-shadow: 1px 2px gray;
+text-shadow: 1px 2px #919098;
 
 
 }
 
 .names {
-  color: #fcc26c;
+  color: #ff7070;
 
 }
 
 .names:hover {
   text-decoration:none;
-  color: #ff9b38;
+  color: white;
+
 }
