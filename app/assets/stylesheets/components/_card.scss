@@ -20,6 +20,11 @@
   object-fit: cover;
 }
 
+.card-category .text{
+  position: absolute;
+  z-index: 999;
+}
+
 .names {
   color: #ffb427;
 }
